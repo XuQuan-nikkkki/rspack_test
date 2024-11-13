@@ -4,9 +4,9 @@ const path = require("path");
 module.exports = {
   source: {
     entry: {
-      quote: './src/quote_machine_of_Chibi_Maruko_chan/index.tsx',
-      quote_test: './src/quote_test/index.tsx'
-    }
+      quote: "./src/quote_machine_of_Chibi_Maruko_chan/index.tsx",
+      quote_test: "./src/quote_test/index.tsx",
+    },
   },
   module: {
     rules: [
@@ -22,6 +22,7 @@ module.exports = {
     path: __dirname + "/dist",
     filename: "[name].bundle.js",
     chunkFilename: "[name].chunk.js",
-    publicPath: "/dist/",
+    publicPath: "/",
+    assetPrefix: "/rspack_test/",
   },
 };
